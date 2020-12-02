@@ -1,0 +1,42 @@
+{
+  "name": "tfjs-digital-reconization-demo",
+  "version": "1.0.0",
+  "author": "ChenKS12138 <749923710@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "clean": "rm -rf ./resource/mnist_images_buffer ./resource/mnist_images.png ./resource/mnist_labels_uint8 ./resource/model/",
+    "start": " parcel serve ./src/index.html -d ./docs",
+    "build": " rm -rf ./dist && parcel build ./src/index.html -d ./docs --no-source-maps --public-url ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-react-jsx": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@tensorflow/tfjs": "^2.7.0",
+    "@tensorflow/tfjs-node": "^2.7.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "cli-progress": "^3.8.2",
+    "jimp": "^0.16.1",
+    "parcel-bundler": "^1.12.4",
+    "request": "^2.88.2",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^2.7.0",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "preact": "^10.5.5"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "assets"
+    ]
+  }
+}

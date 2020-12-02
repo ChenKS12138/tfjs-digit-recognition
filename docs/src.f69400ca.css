@@ -1,0 +1,16 @@
+.shadow {
+  box-shadow: rgb(144, 144, 144) 2px 2px 4px;
+}
+.app {
+  min-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin-bottom: 30px;
+}
+
+
+/*# sourceMappingURL=/src.f69400ca.css.map */
